@@ -34,7 +34,8 @@ body{
     background-image: url("/src/fondo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%; /* fuerza a estirarse a todo el body */
+    background-size: 100% 100%; /* o 'cover' si quieres mantener proporciones */
+    background-attachment: fixed; /* ¡esto hace que el fondo no se mueva! */
 }
 
 .container{
