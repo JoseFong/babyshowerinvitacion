@@ -8,176 +8,29 @@
     src: url("../fonts/Borel-Regular.ttf");
 }
 
+html{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .medidor{
     position: absolute;
     width: 50%;
-    border: solid 2px red;
     height: 100vw;
     z-index: 40;
-}
-
-.fondo{
-    max-width: 100%;
-    position: fixed;
-    z-index: -50;
 }
 
 body{
     position: relative;
     margin: 0px;
     padding: 0px;
+    text-align: center;
+    color: white;
 }
-
-.pink-container{
-    width: 96%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.pink-container.two{
-    transform: translate(-50%,99%);
-}
-
-.pink-container.three{
-    transform: translate(-50%,183%);
-}
-
-.pink-container.four{
-        transform: translate(-50%,267%);
-    }
-
-.pink-container.five{
-    transform: translate(-50%,304%);
-}
-
-.pink-container.six{
-    transform: translate(-50%,351%);
-}
-
-.pink-container.seven{
-    transform: translate(-50%,433%);
-}
-
-.pink-container.eight{
-    transform: translate(-50%,517%);
-}
-
-.pink-container.nine{
-    transform: translate(-50%,600%);
-}
-
-.pink-container.ten{
-    transform: translate(-50%,638%);
-}
-
-.pink-container.eleven{
-    transform: translate(-50%,722%);
-}
-
-.pink-container.twelve{
-    transform: translate(-50%,800%);
-}
-
-.pink-container.thirteen{
-    transform: translate(-50%,890%);
-    z-index: 90;
-}
-
-.pink-container.fourteen{
-    transform: translate(-50%,800%);
-}
-
-.pink-container.fifteen{
-    z-index: 100;
-    transform: translate(-50%,980%);
-}
-
-.pink-container.sixteen{
-    z-index: 110;
-    transform: translate(-50%,1070%);
-}
-
-.pink-container.seventeen{
-    z-index: 120;
-    transform: translate(-50%,1120%);
-}
-
-@media (min-width:300px) {
-    .pink-container.seventeen{
-        display: none
-    }
-
-    .pink-container.sixteen{
-        display: none;
-    }
-}
-
-@media (min-width:320px){
-    .pink-container.fifteen{
-        display: none;
-    }
-}
-
-@media (min-width:384px){
-    .pink-container.fourteen{
-        display: none;
-    }
-
-    .pink-container.twelve{
-        display: none;
-    }
-
-    .pink-container.thirteen{
-        display: none;
-    }
-}
-
-@media (min-width:640px){
-    .pink-container.eleven{
-        display: none;
-    }
-}
-
-@media (min-width:740px){
-    .pink-container.ten{
-        display: none;
-    }
-}
-
-
-@media (min-width:780px){
-    .pink-container.nine{
-        display: none;
-    }
-}
-
-
-@media (min-width:970px){
-    .pink-container.eight{
-        display: none;
-    }
-}
-
-@media (min-width:1240px){
-    .pink-container.seven{
-        display: none;
-    }
-}
-
-@media (min-width:1512px){
-    .pink-container.six{
-        display: none;
-    }
-}
-
-@media (min-width:1790px){
-    .pink-container.five{
-        display: none;
-    }
-}
-
-
 
 .info-container{
     position: absolute;
@@ -188,121 +41,188 @@ body{
     align-items: center;
     z-index: 999;
     flex-direction: column;
+    top: clamp(2.5rem,18vw,16rem);
+    padding: 1rem;
+    gap: clamp(2rem,10vw,7rem) /*2rem 11rem*/
 }
 
-.titulo{
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.normal-text{
+    font-family: "MiFuente";
+    font-size: clamp(0.8rem,3vw,2rem)
+}
+
+.subtitle{
     font-family: "Cursiva";
-    font-weight: 100;
-    padding: 0;
-    margin: 0;
+    font-size: clamp(1rem,3.5vw,3.5rem);
+}
+
+.padres-text{
+    font-family: "Cursiva";
+    font-size: clamp(1rem,3.5vw,3.5rem);
+}
+
+.title{
+    font-family: "Cursiva";
+    font-size: clamp(1.5rem,6vw,4rem);
+}
+
+.img-general{
+    width: clamp(1rem,9.3vw,8rem);
+    min-width: 40px;
+}
+
+.confirmation-button{
+    font-size: clamp(0.8rem,3vw,2rem);
     color: white;
-    text-align: center;    
+    font-family: "Cursiva";
+    border: 0.5rem solid white;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+}
+.confirmation-button:hover{
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-
-/*PINK CONTAINERS*/
-
-@media (min-width:1900px) {
-    .pink-container.six{
-        transform: translate(-50%,351%);
-        display: none;
-    } 
-    
-    .pink-container.five{
-        transform: translate(-50%,351%);
-        display: none;
-    } 
-
-    
+.color{
+    width: clamp(2rem,9.3vw,8rem);
+    height: clamp(2rem,9.3vw,8rem);
+    border-radius: 100%;
+    border: solid white 0.5rem;
 }
 
-/*INFO CONTAINERS*/
-
-@media (min-width:1015px){
-    .info-container{
-        top: 230px;
-    }
+.color-container{
+    display: flex;
+    flex-direction: row;
+    gap: clamp(0.5rem,1.75vw,1.5rem)
 }
 
-@media (min-width:750px) and (max-width:1015px){
-    .info-container{
-        top: 180px;
-    }
+.margin-top{
+    margin-top: 2rem;
 }
 
-@media (min-width:460px) and (max-width:749px){
-    .info-container{
-        top: 120px;
-    }
+.margin-bottom{
+    margin-bottom: 2rem;
 }
 
-@media (max-width:459px){
-    .info-container{
-        top: 80px;
-    }
+.gift-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1rem,4.6vw,4rem);
 }
 
-/*TITULOS*/
-
-@media (min-width:1061px){
-    .titulo{
-        font-size: 54pt;
-        margin-bottom: -35px;
-    }
+.gift-separator{
+    border-radius: 2px;
+    width: 0.5rem;
+    background-color: white;
+    height: clamp(1rem,9.3vw,8rem);
 }
 
-@media (min-width:731px) and (max-width:1060px){
-    .titulo{
-        font-size: 40pt;
-        margin-bottom: -35px;
-    }
+.map{
+    border: 0.3rem dashed white;
+    padding: 0.3rem;
+    border-radius: 50px;
+    max-width: 700px;
+    width: 80%;
+    height: clamp(9rem,35vw,30rem);
 }
 
-@media (min-width:551px) and (max-width:730px){
-    .titulo{
-        font-size: 32pt;
-    }
+.fecha-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.8rem,3vw,2rem);
+    gap: clamp(0.5rem,1.1vw,1rem) /*0.5 1rem*/
 }
 
-@media (max-width:550px){
-    .titulo{
-        font-size: 24pt;
-    }
+.fecha-part{
+    width: clamp(3rem,17vw,15rem); /*3 15rem*/
+    border-top: clamp(0.2rem,0.35vw,0.3rem) dashed white;
+    border-bottom: clamp(0.2rem,0.35vw,0.3rem) dashed white; /*0.2 0.3rem*/ 
 }
 
-@media (max-width:460px){
-    .titulo{
-        font-size: 16pt;
-    }
+.fecha-circle{
+    background-color: white;
+    color: #ebb3bc;
+    height: clamp(2rem,5.8vw,5rem);
+    width: clamp(2rem,5.8vw,5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
 }
 
-/*IMG-GENERAL*/
-
-@media(min-width:820px){
-    .img-general{
-        width: 105px;
-        height: 105px;
-    }
+.today{
+    display:none
 }
 
-@media (min-width:571px) and (max-width:819px){
-    .img-general{
-        width: 90px;
-        height: 90px;
-    }
+.countdown-container{
+    display: flex;
+    flex-direction: row;
+    font-family: "MiFuente";
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.5rem,2.5vw,2rem) /*0.5 2rem*/
 }
 
-@media(max-width:570px){
-    .img-general{
-        width: 60px;
-        height: 60px;
-    }
+.fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-image: url("/src/fondo.png");
+    width: 100%;
+    z-index: -999;
+    background-position: center;
+    background-size:cover;
 }
 
-@media(max-width:500px){
-    .img-general{
-        width: 40px;
-        height: 40px;
-    }
+.number{
+    font-size: clamp(1.7rem,7vw,6rem) /*1.7 6rem*/
 }
 
+.text{
+    font-size: clamp(0.3rem,2.4vw,2rem) /*0.3 2rem*/
+}
+
+.title-img{
+    width: 80%;
+}
+
+.duck-container{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.son{
+    height: clamp(5rem,30vw,25rem); /*5rem 25rem*/
+    transform: translateX(-5%);
+}
+
+.dad{
+    height: clamp(6rem,35vw,30rem); /*6rem 30rem*/
+    transform: translateX(30%);
+}
+
+.mom{
+    height: clamp(6rem,35vw,30rem); /*6rem 30rem*/
+    transform: translateX(-25%);
+
+}
+
+.padding{
+    padding: 2rem;
+}
