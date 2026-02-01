@@ -30,6 +30,11 @@ body{
     padding: 0px;
     text-align: center;
     color: white;
+
+    background-image: url("/src/fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; /* fuerza a estirarse a todo el body */
 }
 
 .container{
@@ -147,34 +152,6 @@ body{
     align-items: center;
     gap: clamp(0.5rem,2.5vw,2rem) /*0.5 2rem*/
 }
-
-.fondo{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 120vw;
-    height: 120vh;
-    z-index: -999;
-    overflow: hidden;
-
-    /* Establecemos la imagen como <img> dentro del div */
-    display: flex;
-}
-
-.fondo::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 120%;
-    height: 120%;
-    background-image: url("/src/fondo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%; /* fuerza a estirarse exactamente */
-    z-index: -1;
-}
-
 
 .text{
     font-size: clamp(0.3rem,2.4vw,2rem) /*0.3 2rem*/
