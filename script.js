@@ -41,3 +41,17 @@ function sameDay(a, b) {
     a.getDate() === b.getDate()
   )
 }
+
+
+const endDiv = document.getElementById("end");
+const offset = -400; // deja 100px visibles antes de bloquear scroll
+
+window.addEventListener("scroll", () => {
+  const scrollBottom = window.scrollY + window.innerHeight;
+  const endTop = endDiv.offsetTop;
+
+  if (scrollBottom >= endTop - offset) {
+    // fijamos scroll para dejar ver un poco del div
+    window.scrollTo(0, endTop - window.innerHeight - offset);
+  }
+});
