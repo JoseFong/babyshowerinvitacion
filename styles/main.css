@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "MiFuente";
+  src: url("../fonts/FunnelDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Cursiva";
+    src: url("../fonts/Borel-Regular.ttf");
+}
+
+.medidor{
+    position: absolute;
+    width: 50%;
+    border: solid 2px red;
+    height: 100vw;
+    z-index: 40;
+}
+
+.fondo{
+    max-width: 100%;
+    position: fixed;
+    z-index: -50;
+}
+
+body{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pink-container{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pink-container.two{
+    transform: translate(-50%,99%);
+}
+
+.pink-container.three{
+    transform: translate(-50%,183%);
+}
+
+.pink-container.four{
+    transform: translate(-50%,267%);
+}
+
+.pink-container.five{
+    transform: translate(-50%,304%);
+}
+
+.pink-container.six{
+    transform: translate(-50%,332%);
+}
+
+.info-container{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 230px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    font-family: "Cursiva";
+    font-weight: 100;
+    font-size: 60pt;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -30px;
+    color: white
+}
+
+.img-general{
+    width: 125px;
+}

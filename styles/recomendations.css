@@ -1,0 +1,27 @@
+.recomendaciones-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.text-recomendaciones{
+    width: 70%;
+    font-size: 20pt;
+}
+
+.presencia{
+    font-family: "MiFuente";
+    margin-top: 18px;
+    color: white;
+    font-size: 35pt;
+}
+
+.titulo-recomendaciones{
+    margin-top: 80px;
+}
+
+.titulo-recomendaciones-two{
+    margin-top: 100px;
+}

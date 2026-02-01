@@ -1,0 +1,40 @@
+.map-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    font-family: "MiFuente";
+    color: white;
+    font-weight: 100;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.map-container h1{
+    font-weight:normal;
+}
+
+.map-duck{
+    position: absolute;
+    width: 25%;
+}
+
+.map{
+    border-radius: 50px;
+    border: white 8px dashed;
+    padding: 8px;
+    width: 700px;
+    margin-top: 20px;
+}
+
+.map-duck.one{
+    top: 0;
+    right: 0;
+    transform: translate(50%,20%) rotate(-20deg);
+}
+
+.map-duck.two{
+    bottom: 0;
+    left: 0;
+    transform: translate(-40%,40%) rotate(20deg);
+}

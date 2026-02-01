@@ -1,0 +1,70 @@
+.title{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.title h2{
+    font-weight: 100;
+    font-size: 24pt;
+    font-family: "MiFuente",sans-serif;
+}
+
+.title h1{
+    letter-spacing: 6pt;
+    font-weight: 100;
+    margin-top: -25px;
+    font-size: 70pt;
+    font-family: "Cursiva";
+    margin-bottom: 0;
+}
+
+.title-img{
+    width: 80%;
+}
+
+.duck-container{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.son{
+    height: 320px;
+    transform: translateX(-10%);
+}
+
+.dad{
+    height: 400px;
+    transform: translateX(25%);
+}
+
+.mom{
+    height: 400px;
+    transform: translateX(-27%);
+}
+
+.title-pato{
+    font-family: "MiFuente",sans-serif;
+    font-size: 20pt;
+    width: 80%;
+    color: white;
+    text-align: center;
+    height: auto; 
+}
+
+.parent{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 30pt;
+    font-family: "Cursiva";
+    text-align: center;
+}
+
+.title-inter{
+    font-family: "MiFuente";
+    font-size: 20pt;
+    margin: 0;
+}

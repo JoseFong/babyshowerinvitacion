@@ -1,0 +1,51 @@
+.fecha-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 80px;
+    gap: 20px;
+}
+
+.fecha-section{
+    color: white;
+    font-family: "MiFuente";
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    font-size: 28pt;
+}
+
+.fecha-section h2{
+    margin: 10px;
+    font-weight: 100;
+}
+
+.line{
+    border-top: white dashed 5px;
+    width: 100%;
+}
+
+.fecha-circle{
+    background-color: white;
+    font-family: "MiFuente",sans-serif;
+    width: 95px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100%;
+    color: #ebb3bc;
+    font-weight: bold;
+    font-size: 34pt;
+}
+
+.hora{
+    color: white;
+    font-family: "MiFuente";
+    font-size: 28pt;
+    margin-top: 18px;
+    font-weight: 400;
+}
