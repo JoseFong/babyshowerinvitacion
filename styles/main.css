@@ -55,6 +55,130 @@ body{
     transform: translate(-50%,351%);
 }
 
+.pink-container.seven{
+    transform: translate(-50%,433%);
+}
+
+.pink-container.eight{
+    transform: translate(-50%,517%);
+}
+
+.pink-container.nine{
+    transform: translate(-50%,600%);
+}
+
+.pink-container.ten{
+    transform: translate(-50%,638%);
+}
+
+.pink-container.eleven{
+    transform: translate(-50%,722%);
+}
+
+.pink-container.twelve{
+    transform: translate(-50%,800%);
+}
+
+.pink-container.thirteen{
+    transform: translate(-50%,890%);
+    z-index: 90;
+}
+
+.pink-container.fourteen{
+    transform: translate(-50%,800%);
+}
+
+.pink-container.fifteen{
+    z-index: 100;
+    transform: translate(-50%,980%);
+}
+
+.pink-container.sixteen{
+    z-index: 110;
+    transform: translate(-50%,1070%);
+}
+
+.pink-container.seventeen{
+    z-index: 120;
+    transform: translate(-50%,1120%);
+}
+
+@media (min-width:300px) {
+    .pink-container.seventeen{
+        display: none
+    }
+
+    .pink-container.sixteen{
+        display: none;
+    }
+}
+
+@media (min-width:320px){
+    .pink-container.fifteen{
+        display: none;
+    }
+}
+
+@media (min-width:384px){
+    .pink-container.fourteen{
+        display: none;
+    }
+
+    .pink-container.twelve{
+        display: none;
+    }
+
+    .pink-container.thirteen{
+        display: none;
+    }
+}
+
+@media (min-width:640px){
+    .pink-container.eleven{
+        display: none;
+    }
+}
+
+@media (min-width:740px){
+    .pink-container.ten{
+        display: none;
+    }
+}
+
+
+@media (min-width:780px){
+    .pink-container.nine{
+        display: none;
+    }
+}
+
+
+@media (min-width:970px){
+    .pink-container.eight{
+        display: none;
+    }
+}
+
+@media (min-width:1240px){
+    .pink-container.seven{
+        display: none;
+    }
+}
+
+@media (min-width:1512px){
+    .pink-container.six{
+        display: none;
+    }
+}
+
+@media (min-width:1790px){
+    .pink-container.five{
+        display: none;
+    }
+}
+
+
+
 .info-container{
     position: absolute;
     transform: translateX(-50%);
@@ -62,8 +186,8 @@ body{
     width: 75%;
     display: flex;
     align-items: center;
+    z-index: 999;
     flex-direction: column;
-    background-color: red;
 }
 
 .titulo{
@@ -172,6 +296,13 @@ body{
     .img-general{
         width: 60px;
         height: 60px;
+    }
+}
+
+@media(max-width:500px){
+    .img-general{
+        width: 40px;
+        height: 40px;
     }
 }
 

@@ -14,8 +14,6 @@
 .colors-container{
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    
 }
 
 @media (min-width:890px){
@@ -43,5 +41,17 @@
     .color{
         width: 50px;
         height: 50px;
+    }
+}
+
+@media(min-width:400px){
+    .colors-container{
+        gap: 30px;
+    }
+}
+
+@media(max-width:399px){
+    .colors-container{
+        gap: 8px;
     }
 }

@@ -1,0 +1,19 @@
+.final{
+    font-family: "MiFuente";
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (min-width:600px){
+    .final{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:599px){
+    .final{
+        font-size: 16px;
+    }
+}

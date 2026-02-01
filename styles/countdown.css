@@ -164,3 +164,29 @@
         min-width: auto;
     }
 }
+
+@media (max-width:330px){
+    .number{
+        font-size: 16pt;
+    }
+
+    .text{
+        font-size: 6pt;
+    }
+
+    .puntos{
+        font-size: 10pt;
+    }
+
+    #today{
+        font-size: 20pt;
+    }
+
+    .countdown-container{
+        gap: 4px;
+    }
+
+    .part-container{
+        min-width: auto;
+    }
+}

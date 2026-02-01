@@ -56,6 +56,13 @@
     }
 }
 
+@media(max-width:500px){
+    .gift-separator{
+        height: 40px;
+    }
+}
+
+
 @media (min-width:517px){
     .gift-content{
         gap: 50px;
