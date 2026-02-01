@@ -44,14 +44,17 @@ function sameDay(a, b) {
 
 
 const endDiv = document.getElementById("end");
-const offset = -400; // deja 100px visibles antes de bloquear scroll
+const offset = -100; // deja 100px visibles
 
 window.addEventListener("scroll", () => {
-  const scrollBottom = window.scrollY + window.innerHeight;
-  const endTop = endDiv.offsetTop;
+  const endRect = endDiv.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
 
-  if (scrollBottom >= endTop - offset) {
+  if (endRect.bottom <= windowHeight + offset) {
     // fijamos scroll para dejar ver un poco del div
-    window.scrollTo(0, endTop - window.innerHeight - offset);
+    window.scrollTo({
+      top: window.scrollY + (endRect.bottom - windowHeight - offset),
+      behavior: "auto"
+    });
   }
 });
