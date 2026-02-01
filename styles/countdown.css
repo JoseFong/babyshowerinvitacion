@@ -127,7 +127,7 @@
     }
 
     #today{
-        font-size: 70pt;
+        font-size: 50pt;
     }
 
     .countdown-container{
@@ -136,5 +136,31 @@
 
     .part-container{
         min-width: 80px;
+    }
+}
+
+@media (max-width:530px){
+    .number{
+        font-size: 20pt;
+    }
+
+    .text{
+        font-size: 8pt;
+    }
+
+    .puntos{
+        font-size: 20pt;
+    }
+
+    #today{
+        font-size: 30pt;
+    }
+
+    .countdown-container{
+        gap: 7px;
+    }
+
+    .part-container{
+        min-width: auto;
     }
 }

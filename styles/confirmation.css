@@ -41,3 +41,9 @@
         font-size: 18pt;
     }
 }
+
+@media (max-width:5000px){
+    .confirmation-button{
+        font-size: 10pt;
+    }
+}

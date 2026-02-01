@@ -29,7 +29,7 @@ body{
 }
 
 .pink-container{
-    width: 90%;
+    width: 96%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -143,6 +143,12 @@ body{
 @media (max-width:550px){
     .titulo{
         font-size: 24pt;
+    }
+}
+
+@media (max-width:460px){
+    .titulo{
+        font-size: 16pt;
     }
 }
 

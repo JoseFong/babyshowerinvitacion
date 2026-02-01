@@ -45,3 +45,10 @@
         height: 300px;
     }
 }
+
+@media (max-width:480px){
+    .map{
+        width: 80%;
+        height: 200px;
+    }
+}

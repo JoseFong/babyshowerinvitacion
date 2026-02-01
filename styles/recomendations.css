@@ -8,7 +8,6 @@
 
 .text-recomendaciones{
     width: 70%;
-    font-size: 20pt;
 }
 
 .presencia{
@@ -25,4 +24,22 @@
 
 .titulo-recomendaciones-two{
     margin-top: 100px;
+}
+
+@media (min-width:550px){
+    .text-recomendaciones{
+        font-size: 20pt;
+    }
+}
+
+@media (max-width:549px){
+    .text-recomendaciones{
+        font-size: 10pt;
+    }
+}
+
+@media (min-width:700px){
+    .titulo-recomendaciones{
+        font-size: 10pt;
+    }
 }
