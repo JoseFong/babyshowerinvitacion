@@ -43,7 +43,7 @@ body{
     flex-direction: column;
     top: clamp(2.5rem,18vw,16rem);
     padding: 1rem;
-    gap: clamp(2rem,10vw,7rem)
+    gap: clamp(2rem,10vw,7rem) /*2rem 11rem*/
 }
 
 .container{
@@ -59,21 +59,21 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: clamp(2.5rem,7vw,6rem); /* MÁS GRANDE en celular */
-    gap: clamp(0.5rem,1.1vw,1rem)
+    font-size: clamp(1.2rem,5vw,6rem);
+    gap: clamp(0.5rem,1.1vw,1rem) /*0.5 1rem*/
 }
 
 .fecha-part{
-    width: clamp(5rem,20vw,20rem);
+    width: clamp(5rem,20vw,20rem); /*3 15rem*/
     border-top: clamp(0.2rem,0.35vw,0.3rem) dashed white;
-    border-bottom: clamp(0.2rem,0.35vw,0.3rem) dashed white;
+    border-bottom: clamp(0.2rem,0.35vw,0.3rem) dashed white; /*0.2 0.3rem*/ 
 }
 
 .fecha-circle{
     background-color: white;
     color: #ebb3bc;
-    height: clamp(5rem,12vw,7rem); /* más grande en celular */
-    width: clamp(5rem,12vw,7rem);
+    height: clamp(3rem,10vw,7rem);
+    width: clamp(3rem,10vw,7rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@ body{
 
 .normal-text{
     font-family: "MiFuente";
-    font-size: clamp(0.7rem, 2.5vw, 1.4rem); /* MUCHO más pequeño en celular */
+    font-size: clamp(1.2rem,4vw,2rem)
 }
 
 .confirmation-button{
@@ -103,18 +103,19 @@ body{
 
 .padres-text{
     font-family: "Cursiva";
-    font-size: clamp(2rem,5vw,3.5rem); /* más grande en celular */
+    font-size: clamp(1rem,3.5vw,3.5rem);
 }
 
 .title{
     font-family: "Cursiva";
-    font-size: clamp(3rem,8vw,5rem); /* MÁS GRANDE en celular */
+    font-size: clamp(2rem,6vw,4rem);
 }
 
 .img-general{
     width: clamp(1.5rem,15vw,8rem);
     min-width: 40px;
 }
+
 
 .confirmation-button:hover{
     background-color: rgba(0, 0, 0, 0.4);
@@ -156,13 +157,7 @@ body{
     height: clamp(1rem,9.3vw,8rem);
 }
 
-.map{
-    border: 0.3rem dashed white;
-    padding: 0.3rem;
-    border-radius: 50px;
-    width: 99%;
-    height: 95vw
-}
+
 
 .today{
     display:none
@@ -174,7 +169,7 @@ body{
     font-family: "MiFuente";
     justify-content: center;
     align-items: center;
-    gap: clamp(0.5rem,2.5vw,2rem)
+    gap: clamp(0.5rem,2.5vw,2rem) /*0.5 2rem*/
 }
 
 .fondo{
@@ -190,15 +185,16 @@ body{
 }
 
 .number{
-    font-size: clamp(4rem,10vw,6.5rem); /* MÁS GRANDE en celular */
+    font-size: clamp(1.7rem,7vw,6rem) /*1.7 6rem*/
 }
 
 .text{
-    font-size: clamp(0.8rem,2.4vw,2rem);
+    font-size: clamp(0.3rem,2.4vw,2rem) /*0.3 2rem*/
 }
 
 .title-img{
     width: 95%;
+    height: auto;
 }
 
 .duck-container{
@@ -209,20 +205,29 @@ body{
 }
 
 .son{
-    height: clamp(5rem,30vw,25rem);
+    height: clamp(5rem,30vw,25rem); /*5rem 25rem*/
     transform: translateX(-5%);
 }
 
 .dad{
-    height: clamp(6rem,35vw,30rem);
+    height: clamp(6rem,35vw,30rem); /*6rem 30rem*/
     transform: translateX(30%);
 }
 
 .mom{
-    height: clamp(6rem,35vw,30rem);
+    height: clamp(6rem,35vw,30rem); /*6rem 30rem*/
     transform: translateX(-25%);
+
 }
 
 .padding{
     padding: 2rem;
+}
+
+.map{
+    border: 0.3rem dashed white;
+    padding: 0.3rem;
+    border-radius: 50px;
+    width: 99%;
+    height: 95vw
 }
