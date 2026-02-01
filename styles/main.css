@@ -52,7 +52,7 @@ body{
 }
 
 .pink-container.six{
-    transform: translate(-50%,332%);
+    transform: translate(-50%,351%);
 }
 
 .info-container{
@@ -69,13 +69,13 @@ body{
 .titulo{
     font-family: "Cursiva";
     font-weight: 100;
-    font-size: 60pt;
+    font-size: 54pt;
     padding: 0;
     margin: 0;
-    margin-bottom: -30px;
+    margin-bottom: -35px;
     color: white
 }
 
 .img-general{
-    width: 125px;
+    width: 105px;
 }

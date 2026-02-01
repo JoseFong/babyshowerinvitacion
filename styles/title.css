@@ -19,6 +19,7 @@
     font-size: 70pt;
     font-family: "Cursiva";
     margin-bottom: 0;
+    margin-bottom: -50px;
 }
 
 .title-img{
@@ -32,23 +33,23 @@
 }
 
 .son{
-    height: 320px;
+    height: 300px;
     transform: translateX(-10%);
 }
 
 .dad{
-    height: 400px;
+    height: 380px;
     transform: translateX(25%);
 }
 
 .mom{
-    height: 400px;
+    height: 380px;
     transform: translateX(-27%);
 }
 
 .title-pato{
     font-family: "MiFuente",sans-serif;
-    font-size: 20pt;
+    font-size: 18pt;
     width: 80%;
     color: white;
     text-align: center;
@@ -58,13 +59,13 @@
 .parent{
     margin: 0;
     margin-top: 20px;
-    font-size: 30pt;
+    font-size: 26pt;
     font-family: "Cursiva";
     text-align: center;
 }
 
 .title-inter{
     font-family: "MiFuente";
-    font-size: 20pt;
+    font-size: 18pt;
     margin: 0;
 }
