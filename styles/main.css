@@ -79,7 +79,7 @@ body{
 
 .padres-text{
     font-family: "Cursiva";
-    font-size: clamp(1rem,3.5vw,3.5rem);
+    font-size: clamp(1.5rem,4.5vw,3.5rem); /* un poco más grande en celular */
 }
 
 .title{
@@ -224,10 +224,15 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: clamp(2rem,7vw,6rem); /* MÁS GRANDE en celular */
-    gap: clamp(0.5rem,1.1vw,1rem);
+    font-size: clamp(1.2rem,5vw,6rem);
+    gap: clamp(0.5rem,1.1vw,1rem) /*0.5 1rem*/
 }
 
 .number{
     font-size: clamp(3rem,10vw,6rem); /* MÁS GRANDE en celular */
+}
+
+.fecha-img{
+    width: 100%;
+    max-width: 700px;
 }
