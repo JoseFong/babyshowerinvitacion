@@ -32,35 +32,11 @@ body{
     color: white;
 }
 
-.info-container{
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    width: 75%;
-    display: flex;
-    align-items: center;
-    z-index: 999;
-    flex-direction: column;
-    top: clamp(2.5rem,18vw,16rem);
-    padding: 1rem;
-    gap: clamp(2rem,10vw,7rem) /*2rem 11rem*/
-}
-
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.fecha-container{
-    display: flex;
-    font-family: "MiFuente";
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: clamp(1.2rem,5vw,6rem);
-    gap: clamp(0.5rem,1.1vw,1rem) /*0.5 1rem*/
 }
 
 .fecha-part{
@@ -184,10 +160,6 @@ body{
     background-size:cover;
 }
 
-.number{
-    font-size: clamp(1.7rem,7vw,6rem) /*1.7 6rem*/
-}
-
 .text{
     font-size: clamp(0.3rem,2.4vw,2rem) /*0.3 2rem*/
 }
@@ -230,4 +202,32 @@ body{
     border-radius: 50px;
     width: 99%;
     height: 95vw
+}
+
+.info-container{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    flex-direction: column;
+    top: clamp(2.5rem,18vw,16rem);
+    padding: 1rem;
+    gap: clamp(3rem,12vw,7rem); /* Aumentamos el gap en celular */
+}
+
+.fecha-container{
+    display: flex;
+    font-family: "MiFuente";
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(2rem,7vw,6rem); /* MÁS GRANDE en celular */
+    gap: clamp(0.5rem,1.1vw,1rem);
+}
+
+.number{
+    font-size: clamp(3rem,10vw,6rem); /* MÁS GRANDE en celular */
 }
