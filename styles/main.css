@@ -200,7 +200,8 @@ body{
 }
 
 .title-img{
-    width: 80%;
+    width: 95%;
+    height: auto;
 }
 
 .duck-container{
