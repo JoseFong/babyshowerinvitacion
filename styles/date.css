@@ -13,8 +13,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
-    font-size: 20pt;
 }
 
 .fecha-section h2{
@@ -39,13 +37,56 @@
     border-radius: 100%;
     color: #ebb3bc;
     font-weight: bold;
-    font-size: 34pt;
 }
 
 .hora{
     color: white;
     font-family: "MiFuente";
-    font-size: 28pt;
     margin-top: 18px;
     font-weight: 400;
+}
+
+@media (min-width:800px){
+    .hora{
+        font-size: 28pt;
+    }
+
+    .fecha-section{
+        font-size: 20pt;
+        width: 200px;
+    }
+
+    .fecha-circle{
+        font-size: 34pt;
+    }
+}
+
+@media (min-width:631px) and (max-width:799px){
+    .hora{
+        font-size: 25pt;
+    }
+
+    .fecha-section{
+        font-size: 16pt;
+        width: 150px;
+    }
+
+    .fecha-circle{
+        font-size: 28pt;
+    }
+}
+
+@media (max-width:630px){
+    .hora{
+        font-size: 16pt;
+    }
+
+    .fecha-section{
+        font-size: 14pt;
+        width: 97px;
+    }
+
+    .fecha-circle{
+        font-size: 28pt;
+    }
 }

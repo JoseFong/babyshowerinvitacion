@@ -23,8 +23,25 @@
 .gift-text{
     font-family: "MiFuente";
     color: white;
-    font-size: 24pt;
     font-weight: 100;
     text-align: center;
     margin: 20px;
+}
+
+@media (min-width:900px){
+    .gift-text{
+        font-size: 24pt;
+    }
+}
+
+@media (min-width:670px) and (max-width:899px){
+    .gift-text{
+        font-size: 20pt;
+    }
+}
+
+@media (max-width:669px){
+    .gift-text{
+        font-size: 16pt;
+    }
 }

@@ -8,18 +8,16 @@
 
 .title h2{
     font-weight: 100;
-    font-size: 24pt;
     font-family: "MiFuente",sans-serif;
 }
 
 .title h1{
     letter-spacing: 6pt;
     font-weight: 100;
-    margin-top: -25px;
-    font-size: 70pt;
-    font-family: "Cursiva";
-    margin-bottom: 0;
+    text-align: center;
+    margin: 0;
     margin-bottom: -50px;
+    font-family: "Cursiva";
 }
 
 .title-img{
@@ -33,23 +31,19 @@
 }
 
 .son{
-    height: 300px;
     transform: translateX(-10%);
 }
 
 .dad{
-    height: 380px;
     transform: translateX(25%);
 }
 
 .mom{
-    height: 380px;
     transform: translateX(-27%);
 }
 
 .title-pato{
     font-family: "MiFuente",sans-serif;
-    font-size: 18pt;
     width: 80%;
     color: white;
     text-align: center;
@@ -59,13 +53,134 @@
 .parent{
     margin: 0;
     margin-top: 20px;
-    font-size: 26pt;
     font-family: "Cursiva";
     text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .title-inter{
     font-family: "MiFuente";
-    font-size: 18pt;
     margin: 0;
+}
+
+/*PATOS/////////////////////////////////////////////////////////////*/
+
+@media (min-width:1000px){
+    .mom{
+        height: 380px;
+    }
+
+    .dad{
+        height: 380px;
+    }
+
+    .son{
+        height: 300px;
+    }
+}
+
+
+@media (min-width:801px) and (max-width:1000px){
+    .mom{
+        height: 300px;
+    }
+
+    .dad{
+        height: 300px;
+    }
+
+    .son{
+        height: 220px;
+    }
+}
+
+@media (max-width:800px){
+    .mom{
+        height: 230px;
+    }
+
+    .dad{
+        height: 230px;
+    }
+
+    .son{
+        height: 150px;
+    }
+}
+
+/*TEXTO DE LA PARTE DE ARRIBA DE LA INVITACION*/
+
+@media (min-width:1150px){
+    .title-pato{
+        font-size: 18pt;
+    }
+
+    .title h2{
+        font-size: 24pt;
+    }
+
+    .title h1{
+        font-size: 70pt;
+    }
+
+    .title-inter{
+        font-size: 18pt;
+    }
+
+    .parent{
+        font-size: 26pt;
+    }
+}
+
+@media (min-width:850px) and (max-width:1150px){
+    .title-pato{
+        font-size: 14pt;
+    }
+
+    .title h2{
+        font-size: 18pt;
+    }
+
+    .title h1{
+        font-size: 50pt;
+    }
+
+    .title-inter{
+        font-size: 14pt;
+    }
+
+    .parent{
+        font-size: 22pt;
+    }
+}
+
+@media (max-width:850px){
+    .title-pato{
+        font-size: 12pt;
+    }
+
+    .title h2{
+        font-size: 18pt;
+    }
+
+    .title h1{
+        font-size: 40pt;
+    }
+
+    .title-inter{
+        font-size: 10pt;
+    }
+
+    .parent{
+        font-size: 16pt;
+    }
+}
+
+@media(max-width:660px){
+    .title h1{
+        line-height: 50px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
 }

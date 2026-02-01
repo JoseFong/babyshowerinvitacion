@@ -14,28 +14,127 @@
     gap: 7px;
     align-items: center;
     font-weight: bold;
-    width: 120px;
 }
 
 .number{
-    font-size: 74pt;
     font-family: "Arial";
 }
 
 .text{
     font-family: "MiFuente";
-    font-size: 16pt;
 }
 
 .puntos{
-    font-size: 80pt;
     transform: translateY(-20%);
 }
 
 #today{
     font-family: "Cursiva";
     color: white;
-    font-size: 70pt;
     display: none;
     margin-top: 80px;
+}
+
+@media (min-width:1070px){
+    .number{
+        font-size: 74pt;
+    }
+
+    .text{
+        font-size: 16pt;
+    }
+
+    .puntos{
+        font-size: 80pt;
+    }
+
+    #today{
+        font-size: 70pt;
+    }
+
+    .countdown-container{
+        gap: 30px;
+    }
+
+    .part-container{
+        width: 120px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1069px){
+    .number{
+        font-size: 65pt;
+    }
+
+    .text{
+        font-size: 16pt;
+    }
+
+    .puntos{
+        font-size: 80pt;
+    }
+
+    #today{
+        font-size: 70pt;
+    }
+
+    .countdown-container{
+        gap: 10px;
+    }
+
+    .part-container{
+        width: 120px;
+    }
+}
+
+@media (min-width:745px) and (max-width:901px){
+    .number{
+        font-size: 50pt;
+    }
+
+    .text{
+        font-size: 16pt;
+    }
+
+    .puntos{
+        font-size: 60pt;
+    }
+
+    #today{
+        font-size: 70pt;
+    }
+
+    .countdown-container{
+        gap: 5px;
+    }
+
+    .part-container{
+        width: 120px;
+    }
+}
+
+@media (max-width:744px){
+    .number{
+        font-size: 40pt;
+    }
+
+    .text{
+        font-size: 8pt;
+    }
+
+    .puntos{
+        font-size: 40pt;
+    }
+
+    #today{
+        font-size: 70pt;
+    }
+
+    .countdown-container{
+        gap: 1px;
+    }
+
+    .part-container{
+        min-width: 80px;
+    }
 }

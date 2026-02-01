@@ -14,7 +14,6 @@
     padding: 20px;
     background: none;
     font-weight: 100;
-    font-size: 30pt;
     transition: all ease 0.3s;
     margin-top: 20px;
     text-decoration: none;
@@ -23,4 +22,22 @@
 .confirmation-button:hover{
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width:900px){
+    .confirmation-button{
+        font-size: 30pt;
+    }
+}
+
+@media (min-width:749px) and (max-width:899px){
+    .confirmation-button{
+        font-size: 24pt;
+    }
+}
+
+@media (max-width:750px){
+    .confirmation-button{
+        font-size: 18pt;
+    }
 }

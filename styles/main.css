@@ -44,8 +44,8 @@ body{
 }
 
 .pink-container.four{
-    transform: translate(-50%,267%);
-}
+        transform: translate(-50%,267%);
+    }
 
 .pink-container.five{
     transform: translate(-50%,304%);
@@ -59,23 +59,113 @@ body{
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    top: 230px;
     width: 75%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: red;
 }
 
 .titulo{
     font-family: "Cursiva";
     font-weight: 100;
-    font-size: 54pt;
     padding: 0;
     margin: 0;
-    margin-bottom: -35px;
-    color: white
+    color: white;
+    text-align: center;    
 }
 
-.img-general{
-    width: 105px;
+
+/*PINK CONTAINERS*/
+
+@media (min-width:1900px) {
+    .pink-container.six{
+        transform: translate(-50%,351%);
+        display: none;
+    } 
+    
+    .pink-container.five{
+        transform: translate(-50%,351%);
+        display: none;
+    } 
+
+    
 }
+
+/*INFO CONTAINERS*/
+
+@media (min-width:1015px){
+    .info-container{
+        top: 230px;
+    }
+}
+
+@media (min-width:750px) and (max-width:1015px){
+    .info-container{
+        top: 180px;
+    }
+}
+
+@media (min-width:460px) and (max-width:749px){
+    .info-container{
+        top: 120px;
+    }
+}
+
+@media (max-width:459px){
+    .info-container{
+        top: 80px;
+    }
+}
+
+/*TITULOS*/
+
+@media (min-width:1061px){
+    .titulo{
+        font-size: 54pt;
+        margin-bottom: -35px;
+    }
+}
+
+@media (min-width:731px) and (max-width:1060px){
+    .titulo{
+        font-size: 40pt;
+        margin-bottom: -35px;
+    }
+}
+
+@media (min-width:551px) and (max-width:730px){
+    .titulo{
+        font-size: 32pt;
+    }
+}
+
+@media (max-width:550px){
+    .titulo{
+        font-size: 24pt;
+    }
+}
+
+/*IMG-GENERAL*/
+
+@media(min-width:820px){
+    .img-general{
+        width: 105px;
+        height: 105px;
+    }
+}
+
+@media (min-width:571px) and (max-width:819px){
+    .img-general{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media(max-width:570px){
+    .img-general{
+        width: 60px;
+        height: 60px;
+    }
+}
+
